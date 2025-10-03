@@ -1,0 +1,11 @@
+import numpy as np
+arr=np.array([2,5,8,1,9,3,7])
+print("Original 1D array:",arr)
+matrix=np.array([[10,15,20],[25,30,35],[40,45,50]])
+print("\nOriginal 2D matrix:\n",matrix)
+print("\n--- Aggregations ---")
+print("Sum of all elements:", np.sum(arr))
+print("Mean of all elements:", np.mean(arr))
+print("Minimum of the matrix:", np.min(matrix))
+print("Maximum of each column:", np.max(matrix, axis=0))
+print("Standard deviation of each row:", np.std(matrix, axis=1))
